@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        
+        <style>
+            
+            .container
+            {
+                position: relative;
+                width:50%;
+            
+            }
+            .overlay
+            {
+                position:absolute;
+                
+                 left:0px;
+                 right:0px;
+                 bottom:0px;
+                
+                 width:0%;
+                 height:100%;
+                transition:0.5s ease;
+                overflow:hidden;
+                background-color:#008CAB;
+                
+            }
+            .container:hover .overlay
+            {
+                
+                width:100%;
+            }
+            .text
+            {
+                color: white;
+                font-size: 20px;
+                position:absolute;
+                overflow: hidden;
+                top:50%;
+                left:60%;
+        white-space: nowrap;
+            }
+            .image
+            {
+                display:block;
+                width:100%;
+                height:auto;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h2>slide in overlay from top</h2>
+        <div class="container"><img src="v.jpg" alt="vandana" width="200" height="400" class="image">
+            <div class="overlay">
+            <div class="text">hello world</div></div></div>
+  
+     </body>
+</html>
